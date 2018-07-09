@@ -1,5 +1,4 @@
 package burp;
-
 import java.io.PrintWriter;
 
 public class BurpExtender implements IBurpExtender {
@@ -18,6 +17,7 @@ public class BurpExtender implements IBurpExtender {
         stdout = new PrintWriter(callbacks.getStdout(), true);
         PrintWriter stderr = new PrintWriter(callbacks.getStderr(), true);
 
+        this.callbacks.registerHttpListener(new HttpListener(this.helpers,this.stdout));
         // write a message to our output stream
         stdout.println("registerExtenderCallbacks Success ");
 
