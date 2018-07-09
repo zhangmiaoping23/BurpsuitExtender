@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="DecryptExtender:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/DecryptExtender_jar</output-path>
+    <root id="archive" name="DecryptExtender.jar">
+      <element id="module-output" name="DecryptExtender" />
+    </root>
+  </artifact>
+</component>
